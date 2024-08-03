@@ -9,7 +9,7 @@
 
 :root{
     --primary-color: #A83338;
-    --secondary-color: #A52A2A;
+    --secondary-color: #F1F1F1;
     --terciary-color: #FFFFFF;
     --color-text: #1f1f1f;
     --title-font: "Montserrat", sans-serif;
@@ -57,3 +57,165 @@ h1,h2,h3{
     text-transform: uppercase;
 }
 
+.container-promotion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+     overflow: hidden;
+     gap: 20px;
+    background-color: var(--secondary-color);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 2rem;
+
+}
+
+.container-promotion-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.promotions {
+    padding: 2rem;
+}
+
+.promotion-subtitle{
+    font-size: 1.5rem;
+    text-align: center;
+    padding-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+.promo-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+}
+
+.promo-card{
+    background-color: var(--secondary-color);
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    
+}
+
+.promo-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+.promo-card-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.promo-card-subtitle{
+    font-size: 1.2rem;
+    margin: 10px;
+    color: var(--color-text);
+}
+
+.promo-card-text{
+    margin: 10px;
+}
+
+.promociones-subtitle{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.cta-button, .button, .newsletter-button{
+    display: inline-block;
+    padding: 0.8em 1.5em;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.newsletter-button{
+    color: var(--color-text);
+}
+
+
+.cta-button{
+    background-color: var(--primary-color);
+    color: var(--terciary-color);
+
+}
+
+.button{
+    color: var(--color-text);
+}
+
+.button:hover{
+    background-color: var(--primary-color);
+    color: var(--terciary-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.newsletter{
+    background-color: var(--primary-color);
+    padding: 2rem;
+    text-align: center;
+    color: var(--terciary-color);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+}
+
+.newsletter-form{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 1.5rem;
+}
+
+.newsletter input[type="email"]{
+    padding: 0.8em;
+    width: 100%;
+    max-width: 200px;
+    border: 1px solid var(--color-text);
+    border-radius: 5px;
+}
+
+.newsletter-button{
+    width: 100%;
+    max-width: 200px;
+    border: none;
+    cursor: pointer;
+    color: var(--color-text);
+    background-color: var(--terciary-color);
+
+}
+
+.newsletter-subtitle{
+    text-transform: uppercase;
+}
+
+.newsletter-button:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+    }
+    
+    .navbar-link{
+        margin-top: 1rem;
+    }
+
+
+}
