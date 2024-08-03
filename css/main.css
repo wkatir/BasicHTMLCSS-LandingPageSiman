@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: #A83338;
+    --secondary-color: #A52A2A;
+    --terciary-color: #FFFFFF;
+    --color-text: #1f1f1f;
+    --title-font: "Montserrat", sans-serif;
+    --text-font: "Open Sans", sans-serif;
+}
+
+body{
+    font-family: var(--text-font);
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--color-text);
+    background-color: var(--terciary-color);
+}
+
+h1,h2,h3{
+    font-family: var(--title-font);
+}
+
+.header{
+    background-color: var(--primary-color);
+    padding: 0.5rem 1rem;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.nav-logo{
+    height: 40px;
+}
+
+.navbarlink{
+    display: flex;
+    gap: 20px;
+}
+
+.navbarlink-link, .navbarlink-link-icon{
+    color: var(--terciary-color);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
