@@ -1,0 +1,35 @@
+.container-categ-title{
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 1.5rem;
+    text-transform: uppercase;
+}
+
+.container-categ{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.section-title{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+.video-section, .sucursales-promo {
+    margin: 2rem 0;
+}
+
+.video-container{
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.video-container-video{
+    width: 100%;
+    height: auto;
+}
