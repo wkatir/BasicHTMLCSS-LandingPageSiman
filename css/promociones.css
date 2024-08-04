@@ -1,0 +1,167 @@
+
+:root{
+    --primary-color: #A83338;
+    --secondary-color: #F1F1F1;
+    --terciary-color: #FFFFFF;
+    --color-text: #1f1f1f;
+    --title-font: "Montserrat", sans-serif;
+    --text-font: "Open Sans", sans-serif;
+}
+
+.container-day-promotion {
+    background-color: var(--secondary-color);
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.container-day-ad {
+    flex-shrink: 0;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.container-day-ad-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.promotion-content {
+    flex-grow: 1;
+    text-align: left;
+}
+
+.section-title {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.promotion-subtitle {
+    font-size: 1rem;
+    color: var(--color-text);
+    margin-bottom: 1rem;
+}
+
+
+.featured-products {
+    margin-top: 3rem;
+
+}
+
+
+.section-title {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+}
+
+.product-item {
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.product-item:hover {
+    transform: translateY(-5px);
+}
+
+.product-image {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.product-name {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.product-price {
+    margin-bottom: 1rem;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: #888;
+    margin-right: 0.5rem;
+}
+
+.discounted-price {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.add-to-cart {
+    background-color: var(--primary-color);
+    color: var(--terciary-color);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover {
+    background-color: #8a2a2e;
+}
+
+.how-to-buy {
+    margin-top: 3rem;
+    padding-bottom: 2rem;
+}
+
+.steps-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+}
+
+.step {
+    text-align: center;
+}
+
+.step-icon {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.step-content-subtitle{
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+
+@media (max-width: 768px) {
+    .container-day-promotion {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .container-day-ad {
+        width: 200px;
+        height: 200px;
+        margin-bottom: 1rem;
+    }
+
+    .promotion-content {
+        text-align: center;
+    }
+}
